@@ -184,8 +184,8 @@ function getHead(arr, n) {
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'b', 'c', 'd' ]
  */
 function getTail(arr, n) {
-   /*return arr.slice(-1, n);*/
-   throw new Error('Not implemented');
+   return arr.reverse().splice(0, n).reverse();
+   /*throw new Error('Not implemented');*/
 }
 
 
@@ -210,6 +210,7 @@ function getTail(arr, n) {
  *    +'30,31,32,33,34'
  */
 function toCsvText(arr) {
+   /*return arr.map(a=>a.join(',')).join();*/
    throw new Error('Not implemented');
 }
 
