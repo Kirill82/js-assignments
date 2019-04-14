@@ -73,7 +73,8 @@ function doubleArray(arr) {
  *    [] => [] 
  */
 function getArrayOfPositives(arr) {
-   throw new Error('Not implemented');
+   return arr.filter(a=>a>0);
+   /*throw new Error('Not implemented');*/
 }
 
 /**
@@ -88,7 +89,8 @@ function getArrayOfPositives(arr) {
  *    [ 'cat, 'dog', 'raccon' ] => [ 'cat', 'dog', 'racoon' ]
  */
 function getArrayOfStrings(arr) {
-   throw new Error('Not implemented');
+   return arr.filter((a)=>{return((typeof a) == 'string')})
+   /*throw new Error('Not implemented');*/
 }
 
 /**
@@ -105,7 +107,8 @@ function getArrayOfStrings(arr) {
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
 function removeFalsyValues(arr) {
-   throw new Error('Not implemented');
+   return arr.filter(a=>{if(a) return true});
+   /*throw new Error('Not implemented');*/
 }
 
 /**
