@@ -168,7 +168,8 @@ function insertItem(arr, item, index) {
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'a', 'b', 'c' ]
  */
 function getHead(arr, n) {
-   throw new Error('Not implemented');
+   return arr.splice(0, n);
+   /*throw new Error('Not implemented');*/
 }
 
 
@@ -183,6 +184,7 @@ function getHead(arr, n) {
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'b', 'c', 'd' ]
  */
 function getTail(arr, n) {
+   /*return arr.slice(-1, n);*/
    throw new Error('Not implemented');
 }
 
